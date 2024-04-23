@@ -10,13 +10,13 @@ int main()
 	char vec[50], caracter;
 	int cantidad = 0;
 	printf("Ingrese un arreglo de caracteres: ");
-	fgets(vec, 50, stdin);
+	gets(vec);
 	system("cls");
 	printf("Ingrese el caracter que desea contar: ");
 	scanf("%c", &caracter);
 	system("cls");
 	cantidad = contar(vec, caracter);
-	printf("La cantidad de veces que se repite el caracter %c es %d", caracter, cantidad);
+	printf("La cantidad de veces que se repite el caracter %c en %s es %d", caracter, vec, cantidad);
 	
 }
 
@@ -33,3 +33,4 @@ int contar(char *vec, char caracter)
 	}
 	return cont;
 }
+

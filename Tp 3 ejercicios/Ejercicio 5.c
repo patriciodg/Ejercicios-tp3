@@ -13,7 +13,8 @@ int main() {
     fgets(cadena2, 50, stdin);
 	system("cls");
     concatenar(cadena1, cadena2, concat);
-
+	printf("La primer cadena es: %s\n", cadena1);
+	printf("La segunda cadena es: %s\n", cadena2);
     printf("La cadena concatenada es: %s\n", concat);
     
     
@@ -30,3 +31,4 @@ void concatenar(char *cadena1, char *cadena2, char *concat) {
     strcpy(concat, cadena1); 
     strcat(concat, cadena2); 
 }
+
